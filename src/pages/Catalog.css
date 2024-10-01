@@ -1,0 +1,13 @@
+.catalog h1{
+    margin: 15px 0px;
+}
+
+.catalog {
+    min-height: 600px;
+    background-color: white;
+}
+
+.catalog .filters button {
+    margin: 6px 4px;
+}
+

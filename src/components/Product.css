@@ -1,0 +1,44 @@
+
+
+.product{
+    border: 1.5px solid #b4b4b4;
+    border-radius: 10px;
+    padding: 10px;
+    height: 400px;
+    width: 300px;
+    display: inline-block;
+    margin: 12px;
+}
+
+.product img{
+    width: 250px;
+}
+
+.product .qt{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.product h4{
+    margin-top: 10px;
+    color: rgb(227, 76, 50);
+}
+
+.product .btn-custom{
+    background-color: rgb(227, 76, 50);
+    color: white;
+}
+.product .btn-custom:hover{
+    background-color: rgb(245, 109, 85);
+    color: white;
+}
+
+.product button i{
+    margin-left: 5px;
+}
+
+
+
+
