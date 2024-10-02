@@ -8,7 +8,7 @@ function QuantityPicker(props){
     function handleIncrease(){
         let value = quantity + 1;
         setQuantity(value)
-        props.onChange();
+        props.onChange(value);
     }
 
     function handleDecrease(){
@@ -16,7 +16,7 @@ function QuantityPicker(props){
 
         let value = quantity - 1;
         setQuantity(value);
-        props.onChange();
+        props.onChange(value);
     }
 
     return(

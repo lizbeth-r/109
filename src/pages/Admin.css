@@ -1,6 +1,6 @@
 .admin{
     background-color: #f6f2ef;
-    padding: 40px 20px;
+    padding-top: 20px;
 }
 
 .admin h1{
@@ -14,11 +14,15 @@
 }
 
 .admin .parent .products{
-    flex: 3;
+    flex: 2;
+    display: flex;
+    justify-content: center;
 }
 
 .admin .parent .coupons{
     flex: 2;
+    display: flex;
+    justify-content: center;
 }
 
 .admin .form{

@@ -1,4 +1,3 @@
-
 export const catalog = [
     {
         "title": "Apple",
