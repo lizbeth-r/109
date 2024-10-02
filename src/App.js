@@ -5,32 +5,36 @@ import Footer from './components/footer';
 import Catalog from './pages/Catalog';
 import About from './pages/About';
 import Home from './pages/Home';
-import Contact from './pages/Contact';
+
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.min.js';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
-import {BrowserRouter, Routes, Route} from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Admin from './pages/Admin';
+import Contact from './pages/Contact';
+import GlobalProvider from './state/GlobalProvider'
 
 function App() {
   return (
-    <BrowserRouter>
-      <div className="App">
-        <Navbar></Navbar>
-        
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/catalog" element={<Catalog />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/admin" element={<Admin />} />
-        </Routes>
+    <GlobalProvider>
+      <BrowserRouter>
+        <div className="App">
+          <Navbar></Navbar>
 
-        <Footer></Footer>
-      </div>
-    </BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/catalog" element={<Catalog />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/admin" element={<Admin />} />
+          </Routes>
+
+          <Footer></Footer>
+        </div>
+      </BrowserRouter>
+    </GlobalProvider>
   );
 }
 

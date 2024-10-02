@@ -13,7 +13,7 @@ function Product(props) {
         setQuantity(qty);
     }
 
-    function getTotal(){
+    function getTotal() {
         let total = props.data.price * quantity;
         return total.toFixed(2);
     }
@@ -23,11 +23,9 @@ function Product(props) {
             <img src={props.data.image} alt=""></img>
 
             <h4>{props.data.title}</h4>
-            <div className="price">
-                <label>Price ${props.data.price.toFixed(2)}</label>
-            </div>
-            <div className="total">
-                <label>Total ${getTotal()}</label>
+            <div className="prices">
+                <label className="total">Total <br></br><span>${getTotal()}</span></label>
+                <label className="price">Price <br></br><span>${props.data.price.toFixed(2)}</span></label>
             </div>
 
             <div className="controls">
