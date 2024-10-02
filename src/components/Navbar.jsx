@@ -6,7 +6,7 @@ import DataContext from '../state/DataContext';
 
 function Navbar() {
 
-  const user = useContext(DataContext).user;
+  const { user, cart } = useContext(DataContext);
 
   return (
 
@@ -48,14 +48,15 @@ function Navbar() {
           </ul>
           <form className="d-flex" role="search">
             <label className='btn btn-light'>{user.name}</label>
-            <input className="form-control me-2 ms-2" type="search" placeholder="Search" aria-label="Search" />
-            <button className="btn btn-outline-success" type="submit">
-              <i class="fa-solid fa-magnifying-glass"></i>
-            </button>
+            <Link className="btn btn-outline-success ms-2" to="/cart">
+              <span class="badge text-bg-light">{cart.length}</span>
+
+              <i class="fa-solid fa-cart-shopping ms-2"></i>
+            </Link>
           </form>
         </div>
       </div>
-    </nav>
+    </nav >
   );
 
 }

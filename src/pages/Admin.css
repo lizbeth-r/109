@@ -16,17 +16,19 @@
 .admin .parent .products{
     flex: 2;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .admin .parent .coupons{
     flex: 2;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .admin .form{
-    border: 1px solid #9a9a9b;
+    border: 1px solid #cecece;
     border-radius: 6px;
     width: 400px;   
     padding: 12px;
@@ -41,4 +43,33 @@
 .admin .form .controls{
     margin-top: 22px;
     text-align: center;
+}
+
+.admin .prod {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    border: 1px solid #c2c2c2;
+    border-radius: 4px;
+    padding: 5px;
+    margin: 10px;
+    background-color: white;
+    gap:10px;
+    width: 100%;
+}
+
+.admin .prod img {
+    height: 70px;
+}
+
+.admin .prod h5 {
+    flex: 4;
+}
+
+.admin .prod label {
+    flex: 1;
+}
+
+.admin .coupons-list{
+    margin-top: 20px;
 }
